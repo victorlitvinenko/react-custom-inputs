@@ -23,7 +23,7 @@ $border-radius: 5px;
   top: 100%;
   margin-top: 3px;
   background-color: $white;
-  max-height: 300px;
+  max-height: 295px;
   overflow-y: auto;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -49,7 +49,6 @@ $border-radius: 5px;
 
   &__item {
     padding: 6px 7px;
-    margin-bottom: 2px;
 
     &.active {
       font-weight: bold;
