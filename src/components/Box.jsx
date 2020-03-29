@@ -62,7 +62,7 @@ const Box = () => {
         </ExtSelect>
         <AvatarSelect
           name="select2"
-          placeholder="Select buyer"
+          placeholder="Select user"
           selected={state.select2}
           onChange={handleSelectChange}
         >

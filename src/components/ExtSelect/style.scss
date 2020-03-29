@@ -65,6 +65,9 @@ $border-radius: 5px;
 .ext-select-selected {
   position: relative;
   padding: 7px 17px 7px 7px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 
   &:after {
     position: absolute;
