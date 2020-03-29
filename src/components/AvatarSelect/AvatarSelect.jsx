@@ -30,12 +30,14 @@ export const AvatarSelect = (props) => {
 
   const [show, setShow] = useState(false);
   const [selectedId, setSelectedId] = useState(selected);
+  const [items, setItems] = useState([]);
 
-  const items = [];
-  React.Children.map(children, (child, id) => {
-    const { children: text, ...rest } = child.props;
-    items.push({ id, ...rest, text });
-  });
+  useEffect(() => {
+    React.Children.map(children, (child, id) => {
+      const { children: text, ...rest } = child.props;
+      setItems((prevItems) => [...prevItems, { id, ...rest, text }]);
+    });
+  }, [children]);
 
   const node = useRef();
 
